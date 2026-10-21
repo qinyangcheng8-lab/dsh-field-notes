@@ -16,6 +16,9 @@ DeepSeek Harness（DSH）实战踩坑笔记。全部来自真实环境（Windows
 
 ## 我们的请求（Asks）
 
+> 📮 已发到官方社区：[deepseek-ai/deepseek-harness · Discussions #10519](https://github.com/deepseek-ai/deepseek-harness/discussions/10519)
+
+
 > 这些都是官方文档之外摸出来的做法。如果 DSH 维护者、插件作者或踩过同样坑的朋友看到，希望能帮忙确认或补充：
 
 1. **插件 API 迁移路径**：DSH 0.2 移除了 `@deepseek-ai/dsh-settings` 的 `installSettingsSection` / `settingsNamespace` 和 `@deepseek-ai/dsh-llm` 的 `assertNever`。第三方插件想兼容 0.2，官方推荐的做法是什么（新版 `SettingsProvider.installSection`？有没有兼容层？）——还是在 0.2 里客户端设置段就不再支持了？
